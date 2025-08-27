@@ -29,6 +29,7 @@ for (const callButton of callButtons) {
       callButton.parentNode.parentNode.querySelector(
         ".service-number"
       ).innerText;
+    console.log(serviceNumber);
     const serviceName =
       callButton.parentNode.parentNode.querySelector(".service-name").innerText;
     const currentTime = new Date().toLocaleTimeString();
@@ -67,3 +68,20 @@ const clearButton = getElement("clear-button").addEventListener(
     getElement("call-history-container").innerHTML = "";
   }
 );
+
+// Copy button section
+const copyButtons = getElement1("copy-button");
+for (const copyButton of copyButtons) {
+  copyButton.addEventListener("click", async function () {
+    const hotlineNumber =
+      copyButton.parentNode.parentNode.querySelector(
+        ".service-number"
+      ).innerText;
+    await navigator.clipboard.writeText(hotlineNumber);
+    alert("Hotline number has been copied: " + hotlineNumber);
+    let copyCount = parseInt(getElement("copy-count").innerText);
+    copyCount += 1;
+    console.log(copyCount);
+    getElement("copy-count").innerText = copyCount;
+  });
+}
