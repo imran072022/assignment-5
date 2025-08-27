@@ -11,16 +11,309 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
+  <body class="bg-pink-200">
     <!--Header-->
-    <header>
+    <header class="mx-auto mb-12">
       <!--Navbar-->
-      <nav>
-        <img src="assets/logo.png" alt="" />
-        <h2 class="text-[#006747]">Emergency <br />Service</h2>
+      <nav class="flex justify-between items-center p-5 px-[60px] bg-white">
+        <div class="left-part flex gap-[10px] items-center justify-center">
+          <img class="w-[50px]" src="assets/logo.png" alt="" />
+          <h2 class="text-[#006747] font-extrabold text-2xl">
+            Emergency<br />Service
+          </h2>
+        </div>
+        <div class="right-side flex gap-5">
+          <div
+            class="flex gap-[10px] items-center justify-center rounded-[50px] bg-[rgba(65,255,107,0.1)] w-[123px] h-[52px] inter font-extrabold"
+          >
+            <p id="nav-heart-count">0</p>
+            <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="" />
+          </div>
+          <div
+            class="flex gap-[10px] items-center justify-center rounded-[50px] bg-[rgba(65,255,107,0.1)] w-[106px] h-[52px] inter font-extrabold"
+          >
+            <p id="nav-coins">100</p>
+            <img class="w-[24px] h-[24px]" src="assets/coin.png" alt="" />
+          </div>
+          <div
+            class="bg-[#00A63E] w-[127px] h-[52px] rounded-[50px] flex items-center justify-center text-white font-semibold inter"
+          >
+            2 Copy
+          </div>
+        </div>
       </nav>
+      <div
+        id="banner"
+        class="text-center py-[21px]"
+        style="
+          background: linear-gradient(
+            to right,
+            #013223 0%,
+            #006747 50%,
+            #013223 100%
+          );
+        "
+      >
+        <img class="w-[92px] h-[92px] mx-auto" src="assets/logo.png" alt="" />
+        <h1 class="hind-madurai font-bold text-[40px] text-white my-[11px]">
+          Emergency Service Directory
+        </h1>
+        <p class="hind-madurai font-semibold text-xl text-white">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <!-- Main layout section-->
+      <section
+        id="main-layout-section"
+        class="w-11/12 mx-auto grid grid-cols-12 gap-[30px] space-y-12"
+      >
+        <!--Left side, cards section-->
+        <section class="col-span-9">
+          <div id="card-conatainer" class="grid grid-cols-3 gap-[30px]">
+            <div
+              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6"
+            >
+              <div id="icons" class="flex items-center justify-between mb-4">
+                <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
+                  <img class="w-8 h-8" src="assets/emergency.png" alt="" />
+                </div>
+                <img
+                  class="card-heart-icon cursor-pointer"
+                  src="assets/heart1.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="mb-6">
+                <h3
+                  class="text-2xl font-bold text-[#111111] leading-8 hind-madurai"
+                >
+                  National Emergency Number
+                </h3>
+                <p class="service-name text-lg text-[#5C5C5C] roboto">
+                  National Emergency Service
+                </p>
+              </div>
+
+              <div class="mb-6">
+                <h2
+                  class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
+                >
+                  999
+                </h2>
+                <div
+                  class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
+                >
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">All</p>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <button
+                  class="flex-1 flex justify-center items-center btn h-[40px] font-normal rounded-lg border bg-white hover:bg-[#d3d1d1] roboto"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call-button flex-1 flex justify-center items-center btn h-[40px] font-normal rounded-lg bg-[#00A63E] border-none text-white roboto"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6"
+            >
+              <div id="icons" class="flex items-center justify-between mb-4">
+                <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
+                  <img class="w-8 h-8" src="assets/emergency.png" alt="" />
+                </div>
+                <img
+                  class="card-heart-icon cursor-pointer"
+                  src="assets/heart1.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="mb-6">
+                <h3
+                  class="text-2xl font-bold text-[#111111] leading-8 hind-madurai"
+                >
+                  Police Helpline Number
+                </h3>
+                <p class="service-name text-lg text-[#5C5C5C] roboto">Police</p>
+              </div>
+
+              <div class="mb-6">
+                <h2
+                  class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
+                >
+                  999
+                </h2>
+                <div
+                  class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
+                >
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">Police</p>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <button
+                  class="flex-1 flex justify-center items-center btn h-[40px] font-normal rounded-lg border bg-white hover:bg-[#d3d1d1] roboto"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call-button flex-1 flex justify-center items-center btn h-[40px] font-normal rounded-lg bg-[#00A63E] border-none text-white roboto"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6"
+            >
+              <div id="icons" class="flex items-center justify-between mb-4">
+                <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
+                  <img class="w-8 h-8" src="assets/emergency.png" alt="" />
+                </div>
+                <img
+                  class="card-heart-icon cursor-pointer"
+                  src="assets/heart1.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="mb-6">
+                <h3
+                  class="text-2xl font-bold text-[#111111] leading-8 hind-madurai"
+                >
+                  Fire Service Number
+                </h3>
+                <p class="service-name text-lg text-[#5C5C5C] roboto">
+                  Fire Service
+                </p>
+              </div>
+
+              <div class="mb-6">
+                <h2
+                  class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
+                >
+                  999
+                </h2>
+                <div
+                  class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
+                >
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">Fire</p>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <button
+                  class="flex-1 flex justify-center items-center btn h-[40px] font-normal rounded-lg border bg-white hover:bg-[#d3d1d1] roboto"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call-button flex-1 flex justify-center items-center btn h-[40px] font-normal rounded-lg bg-[#00A63E] border-none text-white roboto"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6"
+            >
+              <div id="icons" class="flex items-center justify-between mb-4">
+                <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
+                  <img class="w-8 h-8" src="assets/emergency.png" alt="" />
+                </div>
+                <img
+                  class="card-heart-icon cursor-pointer"
+                  src="assets/heart1.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="mb-6">
+                <h3
+                  class="text-2xl font-bold text-[#111111] leading-8 hind-madurai"
+                >
+                  Fire Service Number
+                </h3>
+                <p class="service-name text-lg text-[#5C5C5C] roboto">
+                  Fire Service
+                </p>
+              </div>
+
+              <div class="mb-6">
+                <h2
+                  class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
+                >
+                  999
+                </h2>
+                <div
+                  class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
+                >
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">Fire</p>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <button
+                  class="flex-1 flex justify-center items-center btn h-[40px] font-normal rounded-lg border bg-white hover:bg-[#d3d1d1] roboto"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call-button flex-1 flex justify-center items-center btn h-[40px] font-normal rounded-lg bg-[#00A63E] border-none text-white roboto"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Right side, call history-->
+        <aside
+          class="col-span-3 p-6 card shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white"
+        >
+          <!--Upper part, Clear Button-->
+          <div id="upper-part" class="flex justify-between mb-4">
+            <h3
+              class="roboto font-medium text-xl text-[#111111] flex items-center"
+            >
+              <i class="fa-regular fa-clock"></i> Call History
+            </h3>
+            <button
+              class="bg-[#00A63E] btn w-[114px] h-[52px] border-none text-base rounded-[50px] flex items-center justify-center text-white font-medium inter"
+            >
+              Clear
+            </button>
+          </div>
+          <div id="call-history-container">
+            <div
+              class="flex items-center justify-between p-4 bg-[#FAFAFA] rounded-[4px]"
+            >
+              <div>
+                <h3 class="text-lg inter font-semibold text-[#111111]">
+                  Fire Service Number
+                </h3>
+                <p class="text-lg text-[#5C5C5C] hind-madurai">999</p>
+              </div>
+              <p class="text-lg text-[#111111] hind-madurai">11:36:58 PM</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
