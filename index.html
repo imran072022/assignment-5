@@ -82,7 +82,7 @@
         <section class="col-span-9">
           <div id="card-conatainer" class="grid grid-cols-3 gap-[30px]">
             <div
-              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6"
+              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6 flex flex-col h-full justify-between"
             >
               <div id="icons" class="flex items-center justify-between mb-4">
                 <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
@@ -97,11 +97,11 @@
 
               <div class="mb-6">
                 <h3
-                  class="text-2xl font-bold text-[#111111] leading-8 hind-madurai"
+                  class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
                   National Emergency Number
                 </h3>
-                <p class="service-name text-lg text-[#5C5C5C] roboto">
+                <p class="service-subname text-lg text-[#5C5C5C] roboto">
                   National Emergency Service
                 </p>
               </div>
@@ -132,7 +132,7 @@
               </div>
             </div>
             <div
-              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6"
+              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6 flex flex-col h-full justify-between"
             >
               <div id="icons" class="flex items-center justify-between mb-4">
                 <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
@@ -147,11 +147,13 @@
 
               <div class="mb-6">
                 <h3
-                  class="text-2xl font-bold text-[#111111] leading-8 hind-madurai"
+                  class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
                   Police Helpline Number
                 </h3>
-                <p class="service-name text-lg text-[#5C5C5C] roboto">Police</p>
+                <p class="service-subname text-lg text-[#5C5C5C] roboto">
+                  Police
+                </p>
               </div>
 
               <div class="mb-6">
@@ -180,7 +182,7 @@
               </div>
             </div>
             <div
-              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6"
+              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6 flex flex-col h-full justify-between"
             >
               <div id="icons" class="flex items-center justify-between mb-4">
                 <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
@@ -195,11 +197,11 @@
 
               <div class="mb-6">
                 <h3
-                  class="text-2xl font-bold text-[#111111] leading-8 hind-madurai"
+                  class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
                   Fire Service Number
                 </h3>
-                <p class="service-name text-lg text-[#5C5C5C] roboto">
+                <p class="service-subname text-lg text-[#5C5C5C] roboto">
                   Fire Service
                 </p>
               </div>
@@ -230,7 +232,7 @@
               </div>
             </div>
             <div
-              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6"
+              class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6 flex flex-col h-full justify-between"
             >
               <div id="icons" class="flex items-center justify-between mb-4">
                 <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
@@ -245,11 +247,11 @@
 
               <div class="mb-6">
                 <h3
-                  class="text-2xl font-bold text-[#111111] leading-8 hind-madurai"
+                  class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
                   Fire Service Number
                 </h3>
-                <p class="service-name text-lg text-[#5C5C5C] roboto">
+                <p class="service-subname text-lg text-[#5C5C5C] roboto">
                   Fire Service
                 </p>
               </div>
@@ -293,24 +295,14 @@
               <i class="fa-regular fa-clock"></i> Call History
             </h3>
             <button
-              class="bg-[#00A63E] btn w-[114px] h-[52px] border-none text-base rounded-[50px] flex items-center justify-center text-white font-medium inter"
+              id="clear-button"
+              class="bg-[#00A63E] btn px-9 py-6 border-none text-base rounded-[50px] flex items-center justify-center text-white font-medium inter"
             >
               Clear
             </button>
           </div>
-          <div id="call-history-container">
-            <div
-              class="flex items-center justify-between p-4 bg-[#FAFAFA] rounded-[4px]"
-            >
-              <div>
-                <h3 class="text-lg inter font-semibold text-[#111111]">
-                  Fire Service Number
-                </h3>
-                <p class="text-lg text-[#5C5C5C] hind-madurai">999</p>
-              </div>
-              <p class="text-lg text-[#111111] hind-madurai">11:36:58 PM</p>
-            </div>
-          </div>
+          <!--Call history container-->
+          <div id="call-history-container"></div>
         </aside>
       </section>
     </main>

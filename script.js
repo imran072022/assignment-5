@@ -20,22 +20,50 @@ for (const cardHeart of cardHearts) {
 const callButtons = getElement1("call-button");
 for (const callButton of callButtons) {
   callButton.addEventListener("click", function () {
-    const serviceName =
-      callButton.parentNode.parentNode.querySelector(".service-name").innerText;
+    // declaring variables
+    const serviceSubname =
+      callButton.parentNode.parentNode.querySelector(
+        ".service-subname"
+      ).innerText;
     const serviceNumber =
       callButton.parentNode.parentNode.querySelector(
         ".service-number"
       ).innerText;
+    const serviceName =
+      callButton.parentNode.parentNode.querySelector(".service-name").innerText;
+    const currentTime = new Date().toLocaleTimeString();
     let navCoins = parseInt(getElement("nav-coins").innerText);
     if (navCoins >= 20) {
       let coinAfterDeduction = navCoins - 20;
       getElement("nav-coins").innerText = coinAfterDeduction;
-      alert("Calling " + serviceName + " " + serviceNumber);
+      alert("Calling " + serviceSubname + " " + serviceNumber);
     } else {
       alert("Your don't have enough coins. Minimum 20 coins is needed to call");
       return;
     }
+    const callHistoryContainer = getElement("call-history-container");
+    const callHistory = document.createElement("div");
+    callHistory.innerHTML = `
+<div
+              class="flex items-center justify-between p-4 bg-[#FAFAFA] rounded-[4px] mb-2"
+            >
+              <div>
+                <h3 class="text-lg inter font-semibold text-[#111111]">
+                  ${serviceName}
+                </h3>
+                <p class="text-lg text-[#5C5C5C] hind-madurai">${serviceNumber}</p>
+              </div>
+              <p class="text-lg text-[#111111] hind-madurai">${currentTime}</p>
+            </div>
+`;
+    callHistoryContainer.appendChild(callHistory);
   });
 }
 
-// (5.2, cutting 20 coins)
+// Clear button
+const clearButton = getElement("clear-button").addEventListener(
+  "click",
+  function () {
+    getElement("call-history-container").innerHTML = "";
+  }
+);
