@@ -81,7 +81,6 @@ for (const copyButton of copyButtons) {
     alert("Hotline number has been copied: " + hotlineNumber);
     let copyCount = parseInt(getElement("copy-count").innerText);
     copyCount += 1;
-    console.log(copyCount);
     getElement("copy-count").innerText = copyCount;
   });
 }
