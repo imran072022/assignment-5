@@ -23,33 +23,43 @@
     <!--Header-->
     <header class="mx-auto mb-12">
       <!--Navbar-->
-      <nav class="flex justify-between items-center p-5 px-[60px] bg-white">
-        <div class="left-part flex gap-[10px] items-center justify-center">
-          <img class="w-[50px]" src="assets/logo.png" alt="" />
-          <h2 class="text-[#006747] font-extrabold text-2xl">
-            Emergency<br />Service
-          </h2>
+      <nav class="flex justify-between items-center p-5 lg:px-[60px] bg-white">
+        <div class="">
+          <img
+            class="w-28 h-7 lg:w-[195px] lg:h-[50px]"
+            src="assets/page logo.png"
+            alt=""
+          />
         </div>
-        <div class="right-side flex gap-5">
+        <div class="right-side flex gap-2 lg:gap-5">
           <div
-            class="flex gap-[10px] items-center justify-center rounded-[50px] bg-[rgba(65,255,107,0.1)] w-[123px] h-[52px] inter font-extrabold"
+            class="flex gap-1 lg:gap-[10px] items-center justify-center rounded-[50px] bg-[rgba(65,255,107,0.1)] w-16 h-6 lg:w-[123px] lg:h-[52px] inter font-bold lg:font-extrabold"
           >
-            <p id="nav-heart-count">0</p>
-            <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="" />
+            <p id="nav-heart-count" class="text-sm lg:text-base">0</p>
+            <img
+              class="w-4 h-4 lg:w-[30px] lg:h-[30px]"
+              src="assets/heart.png"
+              alt=""
+            />
           </div>
           <div
-            class="flex gap-[10px] items-center justify-center rounded-[50px] bg-[rgba(65,255,107,0.1)] w-[106px] h-[52px] inter font-extrabold"
+            class="flex gap-1 lg:gap-[10px] items-center justify-center rounded-[50px] bg-[rgba(65,255,107,0.1)] w-16 h-6 lg:w-[106px] lg:h-[52px] inter font-bold lg:font-extrabold"
           >
-            <p id="nav-coins">100</p>
-            <img class="w-[24px] h-[24px]" src="assets/coin.png" alt="" />
+            <p id="nav-coins" class="text-sm lg:text-base">100</p>
+            <img
+              class="w-4 h-4 lg:w-[24px] lg:h-[24px]"
+              src="assets/coin.png"
+              alt=""
+            />
           </div>
           <div
-            class="bg-[#00A63E] w-[127px] h-[52px] rounded-[50px] gap-2 flex items-center justify-center text-white font-semibold inter"
+            class="bg-[#00A63E] w-16 h-6 lg:w-[127px] lg:h-[52px] rounded-[50px] gap-1 lg:gap-2 flex items-center justify-center text-white font-normal lg:font-semibold inter text-sm lg:text-base"
           >
             <span id="copy-count">0</span> Copy
           </div>
         </div>
       </nav>
+      <!--Banner-->
       <div
         id="banner"
         class="text-center py-[21px]"
@@ -62,17 +72,25 @@
           );
         "
       >
-        <img class="w-[92px] h-[92px] mx-auto" src="assets/logo.png" alt="" />
-        <h1 class="hind-madurai font-bold text-[40px] text-white my-[11px]">
+        <img
+          class="w-16 h-16 lg:w-[92px] lg:h-[92px] mx-auto"
+          src="assets/bangladesh-govt-logo 1.png"
+          alt=""
+        />
+        <h1
+          class="hind-madurai font-bold text-3xl lg:text-[40px] text-white my-[11px]"
+        >
           Emergency Service Directory
         </h1>
-        <p class="hind-madurai font-semibold text-xl text-white">
+        <p
+          class="hind-madurai font-medium lg:font-semibold text-sm lg:text-xl text-white"
+        >
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
       </div>
     </header>
-    <main>
+    <main class="hidden">
       <!-- Main layout section-->
       <section
         id="main-layout-section"
@@ -136,7 +154,7 @@
             >
               <div id="icons" class="flex items-center justify-between mb-4">
                 <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
-                  <img class="w-8 h-8" src="assets/emergency.png" alt="" />
+                  <img class="w-8 h-8" src="assets/police.png" alt="" />
                 </div>
                 <img
                   class="card-heart-icon cursor-pointer"
@@ -186,7 +204,7 @@
             >
               <div id="icons" class="flex items-center justify-between mb-4">
                 <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
-                  <img class="w-8 h-8" src="assets/emergency.png" alt="" />
+                  <img class="w-8 h-8" src="assets/fire-service.png" alt="" />
                 </div>
                 <img
                   class="card-heart-icon cursor-pointer"
@@ -236,7 +254,7 @@
             >
               <div id="icons" class="flex items-center justify-between mb-4">
                 <div class="bg-[#FFE3E2] rounded-2xl inline-block p-[14px]">
-                  <img class="w-8 h-8" src="assets/emergency.png" alt="" />
+                  <img class="w-8 h-8" src="assets/ambulance.png" alt="" />
                 </div>
                 <img
                   class="card-heart-icon cursor-pointer"
@@ -249,10 +267,10 @@
                 <h3
                   class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
-                  Fire Service Number
+                  Ambulance Service
                 </h3>
                 <p class="service-subname text-lg text-[#5C5C5C] roboto">
-                  Fire Service
+                  Ambulance
                 </p>
               </div>
 
@@ -260,12 +278,12 @@
                 <h2
                   class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
                 >
-                  999
+                  1994-999999
                 </h2>
                 <div
                   class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
                 >
-                  <p class="text-[#5C5C5C] text-lg hind-madurai">Fire</p>
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">Health</p>
                 </div>
               </div>
               <div class="flex gap-2">
@@ -299,10 +317,10 @@
                 <h3
                   class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
-                  Police Helpline Number
+                  Women & Child Helpline
                 </h3>
                 <p class="service-subname text-lg text-[#5C5C5C] roboto">
-                  Police
+                  Women & child helpline
                 </p>
               </div>
 
@@ -310,12 +328,12 @@
                 <h2
                   class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
                 >
-                  999
+                  109
                 </h2>
                 <div
                   class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
                 >
-                  <p class="text-[#5C5C5C] text-lg hind-madurai">Police</p>
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">Help</p>
                 </div>
               </div>
               <div class="flex gap-2">
@@ -349,10 +367,10 @@
                 <h3
                   class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
-                  Fire Service Number
+                  Anti-Corruption Helpline
                 </h3>
                 <p class="service-subname text-lg text-[#5C5C5C] roboto">
-                  Fire Service
+                  Anti-Corruption
                 </p>
               </div>
 
@@ -360,12 +378,12 @@
                 <h2
                   class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
                 >
-                  999
+                  106
                 </h2>
                 <div
                   class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
                 >
-                  <p class="text-[#5C5C5C] text-lg hind-madurai">Fire</p>
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">Govt.</p>
                 </div>
               </div>
               <div class="flex gap-2">
@@ -399,10 +417,10 @@
                 <h3
                   class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
-                  Fire Service Number
+                  Electricity Helpline
                 </h3>
                 <p class="service-subname text-lg text-[#5C5C5C] roboto">
-                  Fire Service
+                  Electricity-Outage
                 </p>
               </div>
 
@@ -410,12 +428,12 @@
                 <h2
                   class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
                 >
-                  999
+                  16216
                 </h2>
                 <div
                   class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
                 >
-                  <p class="text-[#5C5C5C] text-lg hind-madurai">Fire</p>
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">Electricity</p>
                 </div>
               </div>
               <div class="flex gap-2">
@@ -449,10 +467,10 @@
                 <h3
                   class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
-                  Fire Service Number
+                  Brac Helpline
                 </h3>
                 <p class="service-subname text-lg text-[#5C5C5C] roboto">
-                  Fire Service
+                  Brac
                 </p>
               </div>
 
@@ -460,12 +478,12 @@
                 <h2
                   class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
                 >
-                  999
+                  16445
                 </h2>
                 <div
                   class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
                 >
-                  <p class="text-[#5C5C5C] text-lg hind-madurai">Fire</p>
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">NGO</p>
                 </div>
               </div>
               <div class="flex gap-2">
@@ -499,10 +517,10 @@
                 <h3
                   class="service-name text-2xl font-bold text-[#111111] leading-8 hind-madurai"
                 >
-                  Fire Service Number
+                  Bangladesh Railway Helpline
                 </h3>
                 <p class="service-subname text-lg text-[#5C5C5C] roboto">
-                  Fire Service
+                  Bangladesh Railway
                 </p>
               </div>
 
@@ -510,12 +528,12 @@
                 <h2
                   class="service-number font-bold roboto text-[32px] text-[#111111] leading-10"
                 >
-                  999
+                  163
                 </h2>
                 <div
                   class="bg-[#F2F2F2] rounded-[20px] inline-block py-[6px] px-4"
                 >
-                  <p class="text-[#5C5C5C] text-lg hind-madurai">Fire</p>
+                  <p class="text-[#5C5C5C] text-lg hind-madurai">Travel</p>
                 </div>
               </div>
               <div class="flex gap-2">
