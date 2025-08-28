@@ -90,15 +90,18 @@
         </p>
       </div>
     </header>
-    <main class="hidden">
+    <main class="">
       <!-- Main layout section-->
       <section
         id="main-layout-section"
-        class="w-11/12 mx-auto grid grid-cols-12 gap-[30px] space-y-12"
+        class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-[30px] space-y-12"
       >
         <!--Left side, cards section-->
-        <section class="col-span-9">
-          <div id="card-conatainer" class="grid grid-cols-3 gap-[30px]">
+        <section class="col-span-12 lg:col-span-9">
+          <div
+            id="card-conatainer"
+            class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]"
+          >
             <div
               class="card bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl p-6 flex flex-col h-full justify-between"
             >
@@ -553,7 +556,7 @@
         </section>
         <!--Right side, call history-->
         <aside
-          class="col-span-3 p-6 card shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white mb-12"
+          class="col-span-12 lg:col-span-3 p-6 card shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white mb-12"
         >
           <!--Upper part, Clear Button-->
           <div id="upper-part" class="flex justify-between mb-4">
