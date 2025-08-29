@@ -19,7 +19,7 @@ document.body.appendChild(newDiv)
 
 ✅ Answer to the question no - 3
 Event bubbling means when an event ('click', 'mouseover' etc) happens to a child element, it bubbles up to it's ancestors one by one gradually. First to the parent, then grandparent, up to the root.
-Suppose, if we click a <button> inside a <div>, it will first trigger the button's event, then the div's event, then the upper parent's and so on to the root element's.
+Suppose, if we click a button inside a div element, it will first trigger the button's event, then the div's event, then the upper parent's and so on to the root element's.
 
 ✅ Answer to the question no - 4
 Event delegation implies, instead of attaching event listener to every child, attaching a single event listener to their parent.
