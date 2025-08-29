@@ -32,7 +32,13 @@ for (const callButton of callButtons) {
     console.log(serviceNumber);
     const serviceName =
       callButton.parentNode.parentNode.querySelector(".service-name").innerText;
-    const currentTime = new Date().toLocaleTimeString();
+    const currentTime = new Date().toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
+    });
+
     let navCoins = parseInt(getElement("nav-coins").innerText);
     if (navCoins >= 20) {
       let coinAfterDeduction = navCoins - 20;
