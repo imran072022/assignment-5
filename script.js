@@ -49,12 +49,12 @@ for (const callButton of callButtons) {
               class="flex items-center justify-between p-4 bg-[#FAFAFA] rounded-[4px] mb-2"
             >
               <div>
-                <h3 class="text-lg inter font-semibold text-[#111111]">
+                <h3 class="2xl:text-lg inter font-semibold text-[#111111]">
                   ${serviceName}
                 </h3>
-                <p class="text-lg text-[#5C5C5C] hind-madurai">${serviceNumber}</p>
+                <p class="2xl:text-lg text-[#5C5C5C] hind-madurai">${serviceNumber}</p>
               </div>
-              <p class="text-lg text-[#111111] hind-madurai">${currentTime}</p>
+              <p class="whitespace-nowrap 2xl:text-lg text-[#111111] hind-madurai">${currentTime}</p>
             </div>
 `;
     callHistoryContainer.appendChild(callHistory);
